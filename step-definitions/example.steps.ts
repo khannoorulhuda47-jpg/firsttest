@@ -74,3 +74,10 @@ Then('the page title should contain {string}', async (keyword: string) => {
     throw new Error(`Page title "${pageTitle}" does not contain "${keyword}"`);
   }
 });
+Then('the page title should contain {string}', async (keyword: string) => {
+  const pageTitle = await page.title();
+  if (!pageTitle.includes(keyword)) {
+    throw new Error(`Page title "${pageTitle}" does not contain "${keyword}"`);
+  }
+});
+
