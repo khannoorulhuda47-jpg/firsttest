@@ -44,7 +44,7 @@ When('the user clicks the search button', async () => {
   const searchBox = page.locator('textarea[name="q"]');
   await searchBox.press('Enter');
   await page.waitForNavigation({ waitUntil: 'networkidle' });
-  await page.waitForSelector('[role="main"]', { timeout: 7000 });
+  await page.waitForSelector('[role="main"]', { timeout: 5000 });
 });
 
 Then('the search results should display for {string}', async (keyword: string) => {
