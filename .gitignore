@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Testing
+test-results/
+.nyc_output/
+coverage/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+
+# Misc
+.DS_Store
+*.log
+npm-debug.log*
+
+# Playwright
+.auth/

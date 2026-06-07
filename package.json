@@ -1,0 +1,31 @@
+{
+    "name": "playwright-cucumber-bdd",
+    "version": "1.0.0",
+    "description": "Playwright testing framework with Cucumber BDD",
+    "main": "index.js",
+    "scripts": {
+        "test": "cucumber-js",
+        "test:debug": "node --inspect-brk node_modules/.bin/cucumber-js",
+        "test:parallel": "cucumber-js --parallel 4",
+        "test:report": "cucumber-js --format html:test-results/report.html",
+        "playwright:codegen": "playwright codegen http://localhost:3000"
+    },
+    "keywords": [
+        "playwright",
+        "cucumber",
+        "bdd",
+        "testing"
+    ],
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "@cucumber/cucumber": "^9.5.1",
+        "@playwright/test": "^1.40.1",
+        "playwright": "^1.40.1",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.3.3"
+    },
+    "dependencies": {
+        "axios": "^1.6.2"
+    }
+}
